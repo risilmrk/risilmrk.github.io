@@ -1,121 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Risil's Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1e293b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      color: #1e293b;
-    }
-
-    .project {
-      background: white;
-      padding: 1rem;
-      border-left: 4px solid #3b82f6;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .contact {
-      background: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    .contact a {
-      color: #3b82f6;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: #f1f5f9;
-      margin-top: 2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risilbin Musthafa - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white text-center py-10">
+        <h1 class="text-4xl font-bold">Risilbin Musthafa</h1>
+        <p class="mt-2 text-lg">Aspiring Web Developer | MERN Stack Enthusiast</p>
+    </header>
 
-  <header>
-    <h1>Risil Bin Musthafa</h1>
-    <p>Web Developer | MERN Stack Learner | Tech Enthusiast</p>
-  </header>
+    <!-- About Section -->
+    <section class="max-w-4xl mx-auto py-10 px-4">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Me</h2>
+        <p class="text-gray-600 leading-relaxed">
+            I'm a passionate student at Darul Huda Islamic University, diving deep into the world of web development with a focus on the MERN stack (MongoDB, Express, React, Node.js). I love exploring IT, AI, cybersecurity, and networking, and I'm always eager to learn and grow in the tech field. This portfolio showcases my journey and projects as I build my skills and contribute to the tech community.
+        </p>
+    </section>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate student at Darul Huda Islamic University, currently exploring web development with a focus on the MERN stack. I enjoy learning about IT, AI, cybersecurity, and networking. This portfolio highlights my current journey and growth in the tech field.
-    </p>
-  </section>
+    <!-- Skills Section -->
+    <section class="bg-white py-10">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Skills</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">MERN Stack (MongoDB, Express, React, Node.js)</li>
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">JavaScript & TypeScript</li>
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">HTML & CSS (Tailwind CSS)</li>
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">AI & Machine Learning Basics</li>
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">Cybersecurity Fundamentals</li>
+                <li class="bg-blue-100 text-blue-800 font-medium py-2 px-4 rounded">Networking (HTTP, DNS)</li>
+            </ul>
+        </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
+    <!-- Projects Section -->
+    <section class="max-w-4xl mx-auto py-10 px-4">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">MERN Stack CRUD App</h3>
+                <p class="text-gray-600 mt-2">A simple CRUD application built with MongoDB, Express, React, and Node.js to manage user data. (In Progress)</p>
+                <a href="#" class="text-blue-600 mt-4 inline-block">View Project</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Portfolio Website</h3>
+                <p class="text-gray-600 mt-2">This very portfolio, built with HTML, Tailwind CSS, and JavaScript to showcase my skills and journey.</p>
+                <a href="#" class="text-blue-600 mt-4 inline-block">View Code</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Simple Todo App</h3>
-      <p>A minimal React-based Todo app for managing daily tasks. Includes localStorage support.</p>
-    </div>
+    <!-- Contact Section -->
+    <section class="bg-blue-600 text-white py-10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+            <p class="text-lg mb-6">Interested in collaborating or just want to say hi? Reach out to me!</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/yourusername" target="_blank" class="text-white hover:text-gray-200">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-white hover:text-gray-200">LinkedIn</a>
+                <a href="mailto:your.email@example.com" class="text-white hover:text-gray-200">Email</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Student Management System</h3>
-      <p>Node.js and Express backend with MongoDB for managing student data in an academic portal.</p>
-    </div>
-
-    <div class="project">
-      <h3>My Portfolio</h3>
-      <p>This current one-page HTML project showcasing who I am and what I do!</p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:risilbinmusthafa@gmail.com">risilbinmusthafa@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/im.risiiil" target="_blank">@im.risiiil</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Risil Bin Musthafa. All rights reserved.
-  </footer>
-
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Risilbin Musthafa. All rights reserved.</p>
+    </footer>
 </body>
 </html>
